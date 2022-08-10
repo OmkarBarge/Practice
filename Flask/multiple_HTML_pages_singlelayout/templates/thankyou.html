@@ -1,0 +1,22 @@
+{% extends 'layout.html' %}
+
+{% block title_block %}
+    Thank You
+{% endblock %}
+
+{% block body_block %}
+    {% if age > 18 %}
+        <h1>Thanku for Registering</h1>
+        <p>
+            Name : {{name}}  <br>
+            Age : {{age}}
+        </p>
+    
+    
+    {% else %}
+        <h1>{{name}} you are underage!</h1>
+    
+    {% endif%}
+{% endblock %}
+
+
