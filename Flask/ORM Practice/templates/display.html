@@ -1,0 +1,19 @@
+{% extends 'layout.html' %}
+
+{% block title %}
+Display
+{% endblock %}
+
+{% block content %}
+    <h3>All Available List</h3>
+    
+    <ul>
+    {% for sabji in sabjis %}
+        <li>{{sabji}}</li>
+    {% endfor %}
+
+
+    </ul>
+
+
+{% endblock%}
